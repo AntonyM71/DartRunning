@@ -1,2 +1,2 @@
 heroku ps:scale web=1
-web: python python/server.py
+web: node html/myscript.js
