@@ -11,12 +11,12 @@
     "twig/twig": "^2.0",
     "symfony/twig-bridge": "^3"
   },
-  	"bin": {
-		"bin/heroku-hhvm-apache2",
-		"bin/heroku-hhvm-nginx",
-		"bin/heroku-php-apache2",
-		"bin/heroku-php-nginx"
-    }
+  "bin": {
+	"bin/heroku-hhvm-apache2",
+	"bin/heroku-hhvm-nginx",
+	"bin/heroku-php-apache2",
+	"bin/heroku-php-nginx"
+    },
   "require-dev": {
     "heroku/heroku-buildpack-php": "*"
   }
