@@ -1,9 +1,6 @@
 {
-  "scripts": {
-    "compile": [
-      "php app/console assetic:dump --env=prod --no-debug",
-      "MyVendor\\MyClass::postDeployComposerCallback"
-    ]
+  "require-dev": {
+    "heroku/heroku-buildpack-php": "dev-master"
   },
   "require" : {
     "silex/silex": "^2.0.4",
@@ -17,7 +14,5 @@
 	"bin/heroku-php-apache2",
 	"bin/heroku-php-nginx"
     ],
-  "require-dev": {
-    "heroku/heroku-buildpack-php": "*"
-  }
+
 }
