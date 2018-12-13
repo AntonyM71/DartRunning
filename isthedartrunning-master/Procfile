@@ -1,2 +1,2 @@
-heroku ps:scale web=1
-web: node html/index.php
+web: vendor/bin/heroku-php-apache2 html/
+
