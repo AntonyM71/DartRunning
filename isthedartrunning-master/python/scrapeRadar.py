@@ -6,7 +6,6 @@ from scipy import misc
 from io import BytesIO
 import os
 
-from local_info import metoffice_key
 
 fdir = os.path.dirname(__file__)
 
@@ -44,7 +43,7 @@ def get_radar_image(timestamp):
     radar_url = "http://datapoint.metoffice.gov.uk/public/data/layer/wxobs/RADAR_UK_Composite_Highres/png"
     print "Requesting radar for", timestamp
     try:
-        r = requests.get(radar_url, params={"TIME" : timestamp + "Z", "key": metoffice_key})
+        r = requests.get(radar_url, params={"TIME" : timestamp + "Z", "key": 62b13283-9f56-406b-8c77-23862bb9ec23})
         r.raise_for_status()
     except requests.exceptions.HTTPError as err:
         print err
